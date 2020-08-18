@@ -1,0 +1,86 @@
+Zsource=2
+
+
+###ground###
+#y=0
+
+###ray tracing###
+
+delta=0.02
+distance=700
+height=400
+
+###ray shooting###
+
+nbRay=5
+angleMax=4.5
+
+###Saving###
+
+plotting=1
+savePlot=1
+hdf5Saving=1
+path=''
+name='rays'
+
+###ray plotting###
+
+nbPoint=200 
+lineColor="r"
+lineWidth=0.2
+fmt='png'
+
+###sound speed analytic profil###
+
+analytic=0
+#analytic need to be the last variable and under only the definition of the speed profile is expected
+#don't change or remove the names V and you the syntaxe of sympy to define your function
+#useful sympy functions : exp, log
+
+340+0.1*z
+
+###Sound speed discontinuous profil 2D###
+#z:v
+#le % sur sa ligne seul indique le début du profil échantilloné
+%
+0:340
+10:341
+20:342
+30:343
+40:344
+50:345
+60:346
+70:347
+80:348
+90:349
+100:350
+110:351
+120:352
+130:353
+140:354
+150:355
+160:356
+170:357
+180:358
+190:359
+200:360
+210:361
+220:362
+230:363
+240:364
+250:365
+260:366
+270:367
+280:368
+290:369
+300:370
+310:371
+320:372
+330:373
+340:374
+350:375
+360:376
+370:377
+380:378
+390:379
+400:380
