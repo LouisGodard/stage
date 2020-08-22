@@ -1,0 +1,103 @@
+#This text files is an example of the kind of file the program expects
+#This files is treated in the module Donnees
+#I try to make it the more flexible I can but my advice is to just modify the values and 
+#evitate to put space after the values especially if it is a string
+#if you want to put some comments you need to choose or add a empty line and begin put an # before writing
+#your comment
+
+#height of the source, by default the x position of the source is 0, you can modify it in the module Donnees
+
+Zsource=2  
+
+###ray tracing###
+
+delta=0.02
+distance=700
+height=400
+
+###ray shooting###
+
+nbRay=5
+angleMax=4.5
+#angle is in degree
+
+###Saving###
+
+plotting=1
+savePlot=1
+hdf5Saving=1
+path=''
+#for example : A:/Documents/
+#take care to put the last "/"
+name='rays'
+#no extension needed
+
+###ray plotting###
+
+nbPoint=200
+lineColor="r"
+lineWidth=0.2
+fmt='png'
+
+###rays caracteristics###
+caracteristic=1
+
+###sound speed profil###
+#put analytic to 0 if you want to use a sample speed profile or to 1 if you want to define it with a function
+#I put the two form of speed profil in this file for the example but only one is needed as long as 
+#the value of analytic is coherent
+
+analytic=1
+
+#analytic need to be the last variable and under only the definition of the speed profile is expected
+#use you the syntaxe of sympy to define your function
+#useful sympy functions : exp, log
+
+###sound speed analytic profil###
+340+0.1*z
+
+###Sound speed discontinuous profil 2D###
+#z:v
+#the caracter % means you begin to define the profil
+%
+0:340
+10:341
+20:342
+30:343
+40:344
+50:345
+60:346
+70:347
+80:348
+90:349
+100:350
+110:351
+120:352
+130:353
+140:354
+150:355
+160:356
+170:357
+180:358
+190:359
+200:360
+210:361
+220:362
+230:363
+240:364
+250:365
+260:366
+270:367
+280:368
+290:369
+300:370
+310:371
+320:372
+330:373
+340:374
+350:375
+360:376
+370:377
+380:378
+390:379
+400:380
