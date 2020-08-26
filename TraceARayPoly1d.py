@@ -130,7 +130,7 @@ there was a reflexion or not"""
             direction1=(1,-deriValue)#the new vector of direction need to
             #symetric to the normal of the ground
             
-            origin1=x1,10**(-12) #we fix z to 0 because if we don't
+            origin1=x1,10**(-10) #we fix z to 10**-10 because if we don't
             #do this, approximations can lead to a wrong reflexion
             #we are a little over 0 to evitate that approximation of the solver
             #leads to an other reflexion
