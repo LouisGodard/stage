@@ -241,8 +241,8 @@ else:
 #the range is low
 #We had a second term in the case where the variation of the gradient is
 #infinite in some points because without it the range could tend to 0
-d=lambda x,z:delta*norm(x,z)/np.abs(laplacian(x,z))+delta*(1/(1+delta*norm(x,z)/np.abs(laplacian(x,z))))
-#d=lambda x,z:(8*delta/norm(x,z))**(1/3)
+#d=lambda x,z:delta*norm(x,z)/np.abs(laplacian(x,z))+delta*(1/(1+delta*norm(x,z)/np.abs(laplacian(x,z))))
+d=lambda x,z:(8*delta/norm(x,z))**(1/3)
 
 
 def traceRay(rayon):
